@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Apane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.operatorUI.EditUserUIController">
+   <children>
+      <StackPane alignment="TOP_LEFT" prefHeight="422.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="489.0" fitWidth="501.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/customer/background3.png" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="442.0" prefWidth="500.0">
+               <children>
+                  <StackPane alignment="TOP_LEFT" prefHeight="25.0" prefWidth="501.0">
+                     <children>
+                        <Label contentDisplay="TOP" prefHeight="25.0" prefWidth="521.0" style="-fx-background-color: #336699;" text=" 修改用户" />
+                        <GridPane prefHeight="34.0" prefWidth="504.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="133.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="337.0" minWidth="10.0" prefWidth="337.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="0.0" prefWidth="24.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <StackPane prefHeight="24.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                 <children>
+                                    <Label fx:id="closeButton" minHeight="5.0" minWidth="5.0" onMouseClicked="#closeStage" opacity="0.61" prefHeight="13.0" prefWidth="13.0">
+                                       <effect>
+                                          <ImageInput>
+                                             <source>
+                                             <Image url="@../../../img/login/close.png" />
+                                             </source>
+                                          </ImageInput>
+                                       </effect>
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </StackPane>
+                  <GridPane layoutX="23.0" layoutY="42.0" prefHeight="291.0" prefWidth="456.0">
+                     <children>
+                        <HBox prefHeight="183.0" prefWidth="455.0">
+                           <children>
+                              <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <ImageView fx:id="Img" fitHeight="146.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../img/default/test.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="20.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label fx:id="addPhotoLabel" contentDisplay="CENTER" onMouseClicked="#addPhoto" text="更换图片" underline="true">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets top="5.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <GridPane prefHeight="179.0" prefWidth="326.0">
+                                 <children>
+                                    <Label text="用户名称：" />
+                                    <Label text="职务：" GridPane.rowIndex="1" />
+                                    <TextField fx:id="userName" prefHeight="30.0" prefWidth="177.0" GridPane.columnIndex="1">
+                                       <padding>
+                                          <Insets bottom="2.0" left="5.0" right="10.0" top="2.0" />
+                                       </padding>
+                                    </TextField>
+                                    <ChoiceBox fx:id="role" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: #ffffff;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets bottom="3.0" top="3.0" />
+                                       </GridPane.margin>
+                                       <opaqueInsets>
+                                          <Insets bottom="3.0" top="3.0" />
+                                       </opaqueInsets>
+                                    </ChoiceBox>
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="120.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="193.0" />
+                                 </columnConstraints>
+                                 <padding>
+                                    <Insets bottom="25.0" left="30.0" right="10.0" top="25.0" />
+                                 </padding>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </HBox>
+                        <GridPane alignment="CENTER" prefHeight="139.0" prefWidth="384.0" GridPane.rowIndex="1">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" text="id：" />
+                              <Label text="password：" GridPane.rowIndex="1" />
+                              <TextField fx:id="id" prefHeight="28.0" prefWidth="305.0" GridPane.columnIndex="1">
+                                 <padding>
+                                    <Insets bottom="2.0" left="5.0" right="10.0" top="2.0" />
+                                 </padding>
+                              </TextField>
+                              <TextField fx:id="passwordcode" prefHeight="28.0" prefWidth="306.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <padding>
+                                    <Insets bottom="2.0" left="5.0" right="10.0" top="2.0" />
+                                 </padding>
+                              </TextField>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="94.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="396.0" minWidth="10.0" prefWidth="305.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <GridPane.margin>
+                              <Insets left="40.0" right="16.0" />
+                           </GridPane.margin>
+                        </GridPane>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="204.0" minHeight="10.0" prefHeight="188.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="191.0" minHeight="10.0" prefHeight="103.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane alignment="CENTER_RIGHT" layoutX="20.0" layoutY="370.0" prefHeight="38.0" prefWidth="473.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="confirmButton" alignment="CENTER_RIGHT" mnemonicParsing="false" onMouseClicked="#uploadCustomerInfo" text="Button" GridPane.columnIndex="3">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                 	<Image url="@../../../img/customer/确认按钮.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                           <GridPane.margin>
+                              <Insets left="15.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button fx:id="cancelButton" mnemonicParsing="false" onMouseClicked="#closeStage" prefHeight="13.0" prefWidth="48.0" text="Button" GridPane.columnIndex="2">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                 	<Image url="@../../../img/customer/取消按钮.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                        </Button>
+                        <Button fx:id="deleteButton" mnemonicParsing="false" onMouseClicked="#deleteUser" text="Button">
+                           <effect>
+                              <ImageInput>
+                                 <source>
+                                 	<Image url="@../../../img/customer/删除按钮.png" />
+                                 </source>
+                              </ImageInput>
+                           </effect>
+                           <GridPane.margin>
+                              <Insets left="12.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+
+</AnchorPane>

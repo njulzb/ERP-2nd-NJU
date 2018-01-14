@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="600.0" maxWidth="30.0" prefHeight="600.0" prefWidth="30.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.userUI.StoreManager.StoreReceiptSelectController">
+   <children>
+      <Label fx:id="alarmForm" layoutY="20.0" onMouseClicked="#toalarmForm" prefHeight="130.0" prefWidth="30.0" style="-fx-background-color: #e6e3cc;" text="报警单" wrapText="true">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="7.0" />
+         </padding>
+      </Label>
+      <Label fx:id="lossForm" layoutY="160.0" onMouseClicked="#tolossForm" prefHeight="130.0" prefWidth="30.0" style="-fx-background-color: #e6e3cc;" text="报损单" wrapText="true">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="7.0" />
+         </padding>
+      </Label>
+      <Label fx:id="overflowForm" layoutY="300.0" onMouseClicked="#tooverflowForm" prefHeight="130.0" prefWidth="30.0" style="-fx-background-color: #e6e3cc;" text="报溢单" wrapText="true">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="7.0" />
+         </padding>
+      </Label>
+       <Label fx:id="presentForm" layoutY="440.0" onMouseClicked="#topresentForm" prefHeight="130.0" prefWidth="30.0" style="-fx-background-color: #e6e3cc;" text="赠送单" wrapText="true">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="7.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

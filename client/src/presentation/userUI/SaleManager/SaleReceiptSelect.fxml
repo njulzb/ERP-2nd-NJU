@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="600.0" maxWidth="30.0" prefHeight="600.0" prefWidth="30.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.userUI.SaleManager.SaleReceiptSelectController">
+   <children>
+      <Label fx:id="purchaseForm" layoutY="20.0" onMouseClicked="#topurchaseForm" prefHeight="130.0" prefWidth="30.0" style="-fx-background-color: #e6e3cc;" text="进货单" wrapText="true">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="7.0" />
+         </padding>
+      </Label>
+      <Label fx:id="purchaseReturnForm" layoutY="160.0" onMouseClicked="#topurchaseReturnForm" prefHeight="130.0" prefWidth="30.0" style="-fx-background-color: #e6e3cc;" text="进货退货单" wrapText="true">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="7.0" />
+         </padding>
+      </Label>
+      <Label fx:id="saleSlipForm" layoutY="300.0" onMouseClicked="#tosaleSlipForm" prefHeight="130.0" prefWidth="30.0" style="-fx-background-color: #e6e3cc;" text="销售单" wrapText="true">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="7.0" />
+         </padding>
+      </Label>
+       <Label fx:id="saleReturnSlipForm" layoutY="440.0" onMouseClicked="#tosaleReturnSlipForm" prefHeight="130.0" prefWidth="30.0" style="-fx-background-color: #e6e3cc;" text="销售退货单" wrapText="true">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="7.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

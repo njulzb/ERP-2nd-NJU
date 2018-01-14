@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.userUI.homeUIController">
+   <children>
+      <AnchorPane fx:id="InfoPane" layoutX="10.0" prefHeight="610.0" prefWidth="700.0">
+         <children>
+            <GridPane layoutY="38.0" prefHeight="563.0" prefWidth="718.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="38.0">
+               <children>
+                  <Line endX="637.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Line>
+                  <Label prefHeight="47.0" prefWidth="257.0" text="登录状态" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="47.0" prefWidth="257.0" text="个人信息" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Line endX="637.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <GridPane alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="登录时间：" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="登录状态：" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Text fx:id="loginTime" strokeType="OUTSIDE" strokeWidth="0.0" text="17" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Text fx:id="loginStatus" strokeType="OUTSIDE" strokeWidth="0.0" text="manger" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <ImageView fitHeight="80.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" GridPane.rowSpan="2">
+                           <image>
+                              <Image url="@../../../img/main/loginAcess.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="90.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.0" minWidth="10.0" prefWidth="250.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="399.0" minWidth="0.0" prefWidth="84.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="381.0" minWidth="10.0" prefWidth="304.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <ImageView fx:id="photo" fitHeight="150.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/main/photo.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="25.0" top="50.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <GridPane alignment="CENTER" prefHeight="247.0" prefWidth="328.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="姓名：" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="职位：" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Text fx:id="name" strokeType="OUTSIDE" strokeWidth="0.0" text="17" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Text fx:id="work" strokeType="OUTSIDE" strokeWidth="0.0" text="manger" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Text fx:id="abilityTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="折让权限：" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="工号：" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Text fx:id="id" strokeType="OUTSIDE" strokeWidth="0.0" text="1612500000" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Text fx:id="ability" strokeType="OUTSIDE" strokeWidth="0.0" text="male" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.0" minWidth="10.0" prefWidth="51.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="399.0" minWidth="0.0" prefWidth="110.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="381.0" minWidth="0.0" prefWidth="131.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="381.0" minWidth="10.0" prefWidth="21.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </GridPane>
+                     </children>
+                  </HBox>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="35.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="800.0" minWidth="10.0" prefWidth="625.0" />
+                  <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="40.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="192.0" minHeight="0.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="274.0" minHeight="0.0" prefHeight="265.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="600.0" maxWidth="30.0" prefHeight="600.0" prefWidth="30.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.userUI.FinancialManager.ReceiptSelectController">
+   <children>
+      <Label fx:id="newCashForm" layoutY="20.0" onMouseClicked="#toNewCashForm" prefHeight="149.0" prefWidth="30.0" style="-fx-background-color: #e6e3cc;" text="现金费用单" wrapText="true">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="7.0" />
+         </padding>
+      </Label>
+      <Label fx:id="receiptForm" layoutY="175.0" onMouseClicked="#toReceiptForm" prefHeight="149.0" prefWidth="30.0" style="-fx-background-color: #e6e3cc;" text="收款单" wrapText="true">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="7.0" />
+         </padding>
+      </Label>
+      <Label fx:id="payForm" layoutY="330.0" onMouseClicked="#toPayForm" prefHeight="149.0" prefWidth="30.0" style="-fx-background-color: #e6e3cc;" text="付款单" wrapText="true">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="7.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>
